@@ -9,7 +9,7 @@ The goal of this project is to create a flask website to allow students to login
 Our tech stack is rather simple, as we are not using any front-end framework.
 
 - Front-end: Jinja templates (Flask)
-- Backend: Flask + SQLAlchemy
+- Backend: Flask + FlaskSQLAlchemy
 - Database: PostgreSQL
 
 ## How we are hosting this website

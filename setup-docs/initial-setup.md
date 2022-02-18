@@ -1,4 +1,4 @@
-# project setup
+# Initial project setup
 
 ## Create an AWS account
 
@@ -8,10 +8,21 @@ Head over to https://aws.amazon.com/ and create an account
 
 Source: https://lightsail.aws.amazon.com/ls/docs/en_us/articles/amazon-lightsail-creating-a-database
 
-## Install Postgres.app and connect to the database
+## Set up AWS Lightsail instance to use psql CLI tool
 
-1. Head over to https://postgresapp.com/ to install Postgres CLI tools by following the steps
-2. Head over to https://lightsail.aws.amazon.com/ls/docs/en_us/articles/amazon-lightsail-connecting-to-your-postgres-database to connect to the PostgreSQL database on AWS Lightsail
+1. [Create AWS Lightsail instance](https://lightsail.aws.amazon.com/ls/docs/en_us/articles/how-to-create-amazon-lightsail-instance-virtual-private-server-vps)
+2. Install postgres
+```sh
+sudo apt install postgresql
+````
+3. Add the following to the bashrc to login as the postgres user every time I connect to the AWS instance
+```sh
+sudo --login --user=postgres
+```
+
+## Connect to PostgreSQL database on AWS Lightsail
+
+Head over to https://lightsail.aws.amazon.com/ls/docs/en_us/articles/amazon-lightsail-connecting-to-your-postgres-database to connect to the PostgreSQL database on AWS Lightsail
 
 ## Setup local environment
 
@@ -35,16 +46,10 @@ source venv/bin/activate
 pip list
 ```
 
-## Upgrade pip
-
-```sh
-/Users/simontran/coding/stamps-website/venv/bin/python3 -m pip install --upgrade pip
-```
-
 ### Install modules (simon)
 
 ```sh
-pip install flask
+pip install flask flask-sqlalchemy
 ```
 
 ### Direct pip3 installed modules and their versions into requirements.txt file 

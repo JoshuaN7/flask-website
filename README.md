@@ -2,15 +2,15 @@
 
 ## Goal
 
-The goal of this project is to create a flask website to allow students to login a portal and access their current stamps in order to redeem them for various prizes. In addition, we hope to implement a teacher's only portal where they can manage their students stamps. 
+The goal of this project is to create a flask website to allow students to login a portal and access their current stamps in order to redeem them for various prizes. In addition, we hope to implement a teacher's only portal where they can manage their student's stamps. 
 
 ## Our tech stack
 
 Our tech stack is rather simple, as we are not using any front-end framework.
 
-Front-end: Jinja templates (Flask)
-Backend: Flask
-Database: PostgreSQL
+- Front-end: Jinja templates (Flask)
+- Backend: Flask + SQLAlchemy
+- Database: PostgreSQL
 
 ## How we are hosting this website
 
@@ -18,20 +18,20 @@ There's a lot of hosting providers available which makes it difficult and overwh
 
 In particular, we chose to use the Elastic Beanstalk service, the CodePipeline service, and the Lightsail service.
 
-### Overview (Elasticbeanstalk + managed vps database) 
+### Overview (Elastic Beanstalk + managed vps database) 
 
 Pros:
-    - Good git integration
-    - Separated database and back
-    - Easy database configuration
-    - Backups for database
-    - Easy web server configuration
+- Good git integration
+- Separated database and back
+- Easy database configuration
+- Backups for database
+- Easy web server configuration
 Cons:
-    - (Maybe expensive)
+- (Maybe expensive)
 
 ### Elastic Beanstalk
 
-The Elastic Beanstalk service is a great fit four our needs since we did not have to manually set up a web server with Nginx or Apache, but rather, we were able to select a Python pre-configured web server template. This helped us save time on configuration, which lets us focus on building our application. It also allows us to deploy our web application with ease thanks to it's integration to AWS CodePipeline, a service which deploys our app on very git push to the main branch where we host our code. 
+The Elastic Beanstalk service is a great fit four our needs since we did not have to manually set up a web server with Nginx or Apache, but rather, we were able to select a Python pre-configured web server template. This helped us save time on configuration, which lets us focus on building our application. It also allows us to deploy our web application with ease thanks to it's integration to AWS CodePipeline, a service which deploys our app on every git push to the main branch where we host our code. 
 
 ### Our other choices
 

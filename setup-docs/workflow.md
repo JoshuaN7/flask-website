@@ -68,7 +68,7 @@ git commit -m "Verb + what you did message"
 
 git pull 
 ```sh
-git pull upstream --rebase
+git pull upstream <branch> --rebase
 ```
 
 git push

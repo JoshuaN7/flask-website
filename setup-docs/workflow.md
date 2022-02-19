@@ -23,16 +23,16 @@ UNIX/Linux
 1. Open a terminal (using bash or zsh) in Vscode
 2. cd into the project folder if not done
 3. Create a virtual environment with `python3 -m venv venv`
-4. Activate the virtual environment with `source venv/bin/activate`. You should see `(venv)` on front of your shell prompt
-5. Install python packages with `pip install -r requirements.txt``
+4. Activate the virtual environment with `source venv/bin/activate` (You should see `(venv)` on front of your shell prompt)
+5. Install python packages with `pip install -r requirements.txt`
 
 Windows 
 
 1. Open Vscode with `Git bash` as the default terminal profile
 2. cd into the project folder if not done
-3. Create a virtual environment with `python3 -m venv venv=`
+3. Create a virtual environment with `python3 -m venv venv`
 4. Activate the virtual environment with `source venv/Scripts/activate`. You should see `(venv)` on front of your shell prompt
-5. Install python packages with `pip install -r requirements.txt``
+5. Install python packages with `pip install -r requirements.txt`
 
 ### Simon adds a remote to point to other team member's work to test PRs in their fork
 
@@ -108,5 +108,5 @@ git diff
 
 1. Write the code
 2. Open the terminal
-3. Type `export FLASK_APP=app.py` to add the app to the path temporarily
-4. Type `flask run` and open the link to check the website
+3. Type `export FLASK_APP=application.py` to add the app to the path temporarily
+4. Type `flask run` and open the link to check the website and `CTRL+C`to close the local instance of the website
